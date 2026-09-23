@@ -79,3 +79,36 @@ cond_or = (a > 3) or (b < 3)
 print("a = ", a, " b = ", b)
 print("(a < 9) and (b > 30) -> ", cond_and, " (cal que es compleixin les dues)")
 print("(a > 3) or (b < 3)   -> ", cond_or, " (n'hi ha prou amb una)")
+
+# --- 5. OPERADORS ARITMÈTICS ---
+# Serveixen per fer càlculs matemàtics amb variables numèriques (int, float)
+
+x = 17
+y = 5
+
+suma = x + y          # + -> suma
+resta = x - y          # - -> resta
+multiplicacio = x * y          # * -> multiplicació
+divisio = x / y          # / -> divisió (SEMPRE retorna float)
+div_entera = x // y         # // -> divisió entera (arrodoneix cap avall, descarta els decimals)
+modul = x % y          # % -> mòdul (retorna el residu de la divisió)
+
+print("x =", x, " y =", y)
+print("x + y  =", suma, " (suma)")
+print("x - y  =", resta, " (resta)")
+print("x * y  =", multiplicacio, " (multiplicació)")
+print("x / y  =", divisio, " (divisió, sempre float)")
+print("x // y =", div_entera, " (divisió entera, sense decimals)")
+print("x % y  =", modul, " (mòdul, el que sobra de la divisió)")
+print()
+
+# Exemple pràctic: repartir un import entre persones
+total_a_pagar = 47      # int -> diners a repartir (en euros)
+num_persones = 4       # int -> persones que paguen
+
+part_per_persona = total_a_pagar // num_persones   # quant toca a cadascú (part sencera)
+sobrant = total_a_pagar % num_persones    # euros que sobren i cal repartir a part
+
+print("Total a pagar: ", total_a_pagar, "€ entre ", num_persones, " persones")
+print("Part sencera per persona: ", part_per_persona, "€")
+print("Sobrant (mòdul): ", sobrant, "€")
