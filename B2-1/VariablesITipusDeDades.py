@@ -37,23 +37,23 @@ print()
 
 # STRING: seqüència de caràcters, dígits o símbols
 password = "Bob@123"  # string (cometes simples o dobles en Python)
-print("String  -> ", password, "  | tipus: ", type(password).__name__)
+print("String  -> ", password, "  | tipus: ", type(password))
 
 # INTEGER: nombre enter (positiu o negatiu)
 edat = 17  # int
-print("Integer ->", edat, "        | tipus: ", type(edat).__name__)
+print("Integer ->", edat, "        | tipus: ", type(edat))
 
 # FLOAT / DOUBLE: nombre decimal
 preu = 19.99  # float (Python no distingeix float de double, al contrari que altres llenguatges)
-print("Float   ->", preu, "      | tipus: ", type(preu).__name__)
+print("Float   ->", preu, "      | tipus: ", type(preu))
 
 # CHAR: un sol caràcter (Python no té tipus char propi, s'utilitza un string d'un sol caràcter)
 inicial = "M"  # char
-print("Char    ->", inicial, "         | tipus: ", type(inicial).__name__, "(longitud 1)")
+print("Char    ->", inicial, "         | tipus: ", type(inicial), "(longitud 1)")
 
 # BOOLEAN: true o false
 en_estoc = True  # boolean
-print("Boolean -> ", en_estoc, "      | tipus: ", type(en_estoc).__name__)
+print("Boolean -> ", en_estoc, "      | tipus: ", type(en_estoc))
 print()
 
 # --- 3. EXEMPLE PRÀCTIC: SOU FIX + BONUS VARIABLE ---
